@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native'
 
 import Dot from '../../components/Dot'
@@ -8,9 +8,11 @@ import Footer from '../../components/Footer'
 
 export default function Detail({ navigation }) {
 
-    navigation.setOptions({
-        headerTitle: 'Nike Downshift 10'
-    })
+    useEffect(()=> {
+        navigation.setOptions({
+            headerTitle: 'Nike Downshift 10'
+        })
+    },[])
 
     return (
         <ScrollView>

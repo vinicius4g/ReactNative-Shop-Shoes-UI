@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
+import { Ionicons } from '@expo/vector-icons'
+import { TouchableOpacity } from 'react-native'
 
 
 import Home from './pages/Home'
@@ -22,7 +24,17 @@ function Routes(){
                  <Stack.Screen 
                     name="Detail"
                     component={Detail}
-                    options={{headerTitle: ''}}
+                    options={{
+                        headerRight: () => (
+                            <TouchableOpacity style={{marginRight: 15}}>
+                                <Ionicons 
+                                    name="cart-outline"
+                                    size={28}
+                                    color="#000"
+                                />
+                            </TouchableOpacity>
+                        )
+                    }}
                 /> 
 
             </Stack.Navigator>
