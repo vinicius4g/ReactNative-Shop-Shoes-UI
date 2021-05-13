@@ -3,6 +3,8 @@
 
 ## 💻 Projeto
 Shop Shoes é uma UI de uma loja virtual de tênis, feito com ReactNative e em estudo por [Youtube](https://www.youtube.com/watch?v=RZbz26EVysA&ab_channel=Sujeitoprogramador)
+
+- Imagens do projeto funcionando estão na pasta: screenshots.
 <br>
 
 
